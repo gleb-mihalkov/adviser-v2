@@ -1,4 +1,11 @@
+@import '../../Common/ScreenWidth/ScreenWidthLessThen.scss';
+
 .AppLayout {
+  $b: nth(&, 1);
+  $asideWidth: 480px;
+
+  position: relative;
+
   display: flex;
 
   height: 100%;
@@ -10,10 +17,30 @@
 
   &_Aside {
     width: 100%;
-    max-width: 480px;
+    max-width: $asideWidth;
   }
 
   &_Main {
     flex: 1 1 0%;
+  }
+
+  @include ScreenWidthLessThen($asideWidth * 2) {
+    overflow: hidden;
+
+    &_Aside {
+      transition: all .25s ease-in-out;
+
+      transform: translateX(100%);
+
+      position: absolute;
+      right: 0;
+    }
+
+    &-AsideShowed {
+
+      #{$b}_Aside {
+        transform: translateX(0);
+      }
+    }
   }
 }
