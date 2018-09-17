@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 
+import AppLayout from './AppLayout/';
+
 /**
  * Main view of application.
  * @returns {JSX.Element} Element.
@@ -7,6 +9,8 @@ import React, { Fragment } from 'react';
 export default function App() {
 
   return (
-    <Fragment />
+    <AppLayout>
+      <Fragment />
+    </AppLayout>
   );
 }

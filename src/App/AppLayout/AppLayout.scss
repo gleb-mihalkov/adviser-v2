@@ -1,0 +1,19 @@
+.AppLayout {
+  display: flex;
+
+  height: 100%;
+
+  &_Aside,
+  &_Main {
+    height: 100%;
+  }
+
+  &_Aside {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  &_Main {
+    flex: 1 1 0%;
+  }
+}
