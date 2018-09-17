@@ -2,6 +2,8 @@ import React from 'react';
 import classnames from 'classnames';
 import './AppLayout.scss';
 
+import ScrollableLayout from '../../Common/ScrollableLayout/';
+
 /**
  * Layout of application.
  * @param {Boolean}     isAsideShowed True if aside must be showed
@@ -18,10 +20,14 @@ export default function AppLayout({ isAsideShowed, aside, children }) {
   return (
     <div className={classes}>
       <div className="AppLayout_Main">
-        {aside}
+        <ScrollableLayout>
+          {aside}
+        </ScrollableLayout>
       </div>
       <div className="AppLayout_Aside">
-        {children}
+        <ScrollableLayout>
+          {children}
+        </ScrollableLayout>
       </div>
     </div>
   );
