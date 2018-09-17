@@ -1,0 +1,9 @@
+.ScrollableLayout {
+  overflow-y: hidden;
+
+  height: 100%;
+
+  &_Inner {
+    overflow-y: scroll;
+  }
+}
