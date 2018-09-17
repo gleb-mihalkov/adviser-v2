@@ -10,8 +10,10 @@ export default function ScrollableLayout({ children }) {
 
   return (
     <div className="ScrollableLayout">
-      <div className="ScrollableLayout_Inner">
-        {children}
+      <div className="ScrollableLayout_Wrapper">
+        <div className="ScrollableLayout_Inner">
+          {children}
+        </div>
       </div>
     </div>
   );

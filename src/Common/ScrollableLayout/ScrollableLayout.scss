@@ -3,7 +3,9 @@
 
   height: 100%;
 
-  &_Inner {
+  &_Wrapper {
     overflow-y: scroll;
+
+    height: 100%;
   }
 }
