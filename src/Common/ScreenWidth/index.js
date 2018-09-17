@@ -1,0 +1,1 @@
+export { default as getScrollbarSize } from './getScrollbarSize.js';
