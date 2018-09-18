@@ -1,8 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
+import { AppLayout } from './AppLayout';
 
 /**
  * Main view of application.
  */
 export default () => (
-  <Fragment />
+  <AppLayout></AppLayout>
 );

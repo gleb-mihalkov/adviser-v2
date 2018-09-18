@@ -15,7 +15,7 @@ import {
   routerMiddleware
 } from 'connected-react-router';
 
-import App from './App';
+import { App } from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const history = createHashHistory();
