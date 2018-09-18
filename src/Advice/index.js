@@ -1,0 +1,1 @@
+export { default as AdviceComponent } from './Advice.jsx';
