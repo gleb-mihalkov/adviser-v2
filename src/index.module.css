@@ -1,7 +1,7 @@
-* {
-  &, &:before, &:after {
-    box-sizing: border-box;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 body {
@@ -10,7 +10,9 @@ body {
   font-family: sans-serif;
 }
 
-html, body, #root {
+#root,
+html,
+body {
   width: 100%;
   height: 100%;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './index.module.css';
 
 import { createHashHistory } from 'history';
 import { Provider } from 'react-redux';
@@ -15,7 +15,7 @@ import {
   routerMiddleware
 } from 'connected-react-router';
 
-import App from './App/';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const history = createHashHistory();

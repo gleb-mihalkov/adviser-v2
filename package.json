@@ -19,7 +19,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-app-rewire-postcss-cssmodules": "tomaash/react-app-rewire-css-modules",
+    "react-app-rewire-css-modules": "KaplanTestPrep/react-app-rewire-css-modules",
+    "react-app-rewire-postcss-cssnext": "^0.1.1",
     "react-app-rewired": "^1.6.2",
     "sass-loader": "^7.1.0"
   }

@@ -1,5 +1,0 @@
-@mixin ScreenWidthLessOrEqThen($value) {
-  @media screen and (max-width: $value) {
-    @content;
-  }
-}
